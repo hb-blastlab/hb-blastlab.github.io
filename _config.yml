@@ -1,0 +1,44 @@
+title: "BLAST Lab"
+description: "Borderless Authentication & Secure Smart Things Lab"
+url: "https://blast-lab.github.io"           # GitHub Pages 배포 URL (변경 필요)
+baseurl: ""                                    # 서브디렉토리 배포 시 "/repo-name"
+
+# Author
+author:
+  name: "BLAST Lab"
+  email: "jh.park at hanbat.ac.kr"
+
+# Build
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+timezone: Asia/Seoul
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - "*.sh"
+  - node_modules/
+  - vendor/
+
+# Include
+include:
+  - assets
+
+# Plugins (GitHub Pages 지원 플러그인)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Sass
+sass:
+  style: compressed
+
+# Collections (선택, 향후 확장용)
+collections:
+  members:
+    output: false
+  publications:
+    output: false

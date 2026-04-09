@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research – BLAST Lab</title>
+  <meta name="description" content="BLAST Lab 주요 연구 분야 — 인증 보안, IoT 보안, 제로 트러스트, 보안 프로토콜 분석" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="icon" href="../assets/img/favicon2.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../assets/css/blast.css" />
+  <style>
+    .research-full { padding: 40px; }
+    .research-full .research-icon { margin-bottom: 20px; }
+    .research-full h3 { font-size: 1.35rem; margin-bottom: 10px; color: var(--primary); }
+    .research-full p { font-size: 0.95rem; color: var(--text-muted); line-height: 1.8; }
+    .research-full .highlight-list {
+      padding-left: 18px;
+      list-style: disc;
+      color: var(--text-muted);
+      line-height: 1.9;
+      font-size: 0.9rem;
+      margin-top: 12px;
+    }
+    .research-full .highlight-list li::marker { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="../" class="nav__logo"><img src="../assets/img/blastlab_logo_simple.svg" alt="BLAST Lab Logo" style="height:40px;"></a>
+    <ul class="nav__links">
+      <li><a href="../">Home</a></li>
+      <li><a href="../members/">Members</a></li>
+      <li><a href="../research/">Research</a></li>
+      <li><a href="../publications/">Publications</a></li>
+      <li><a href="../news/">News</a></li>
+      <li><a href="../joinus/" style="color:var(--accent);">Join Us</a></li>
+    </ul>
+    <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<nav class="nav-mobile" aria-label="Mobile navigation">
+  <a href="../">Home</a>
+  <a href="../members/">Members</a>
+  <a href="../research/">Research</a>
+  <a href="../publications/">Publications</a>
+  <a href="../news/">News</a>
+  <a href="../joinus/">Join Us</a>
+</nav>
+
+<!-- ── Page Header ── -->
+<header class="page-header">
+  <div class="container">
+    <h1>Research and Projects</h1>
+    <p>연구 분야 및 프로젝트</p>
+  </div>
+</header>
+
+<!-- ── Overview ── -->
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Research Overview</h2>
+      <div class="divider"></div>
+    </div>
+
+    <!-- Research Area 1 -->
+    <div style="margin-bottom: 32px;">
+      <div class="card research-full">
+        <span class="news-item__badge badge-grant" style="display:inline-block; margin-bottom:12px; padding:6px 12px; background-color:#dbeafe; color:#2563eb; border-radius:4px; font-size:0.85rem;">Borderless Authentication</span>
+        
+        <h3>1. Authentication Interoperability</h3>
+        <p>
+           인증 알고리즘, 프로토콜, 플랫폼, 벤더가 공존하는 상황에서 상호운용 방법 및 평가 방법을 연구합니다.
+           <br/>
+           We study interoperability methods and evaluation frameworks in environments where multiple authentication algorithms, protocols, platforms, and vendors coexist.
+        </p>
+        <ul class="highlight-list">
+          <li>상호운용(Interoperability) 및 평가방법 연구</li>
+          Interoperability and evaluation methods across multiple authentication algorithms, protocols, platforms, and vendors
+          <li>생체인증(Biometrics) 기술간 상호운용 및 평가방법 연구</li>
+          Interoperability and evaluation methods across biometric technologies
+          <li>기타 신원인증 기술 (FIDO2, OTP 등)의 상호운용 및 평가방법 연구</li>
+          Interoperability and evaluation methods for other identity authentication technologies (FIDO2, OTP, etc.)
+          
+        </ul>
+        <div class="tags" style="margin-top:16px;">
+          <span class="tag">Interoperability</span>
+          <span class="tag">Evaluation Metric</span>
+          <span class="tag">Biometrics</span>
+          <span class="tag">User Authentication</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Research Area 2 -->
+    <div style="margin-bottom: 32px;">
+      <div class="card research-full">
+        <span class="news-item__badge badge-grant" style="display:inline-block; margin-bottom:12px; padding:6px 12px; background-color:#dbeafe; color:#2563eb; border-radius:4px; font-size:0.85rem;">Borderless Authentication</span>
+        
+        <h3>2. Usable Authentication</h3>
+        <p>
+           사용자 신원을 인증하는 OTP, 생체인증, 무자각지속인증 등 다양한 인증기술을 활용하여 사용자 편의성과 보안을 동시에 달성하는 방법을 연구합니다.
+           Multi-Factor Authentication (MFA) 시 여러 인증 요소 간의 원활한 연동과 사용자 경험을 제공하는 방법을 탐구합니다.
+           <br/>
+           We study methods to simultaneously achieve user convenience and security by leveraging various authentication technologies such as OTP, biometrics, and continuous authentication. We explore approaches to provide seamless integration and user experience across multiple authentication factors in Multi-Factor Authentication (MFA).
+        </p>
+        <ul class="highlight-list">
+          <li>생체인증(Biometrics) 연구</li>
+          Biometric authentication research
+          <li>무자각지속인증(Continuous Authentication) 연구</li>
+          Continuous authentication research
+          <li>Multi-Factor Authentication (MFA) 연구</li>
+          Multi-Factor Authentication (MFA) research
+          <li>기타 신원인증 기술 (FIDO2, OTP 등) 연구</li>
+          Other identity authentication technologies (FIDO2, OTP, etc.) research
+        </ul>
+        <div class="tags" style="margin-top:16px;">
+          <span class="tag">Biometrics</span>
+          <span class="tag">Continuous Authentication</span>
+          <span class="tag">Multi-Factor Authentication</span>
+          <span class="tag">FIDO2</span>
+          <span class="tag">OTP</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Research Area 3 -->
+    <div style="margin-bottom: 32px;">
+      <div class="card research-full">
+        <span class="news-item__badge badge-grant" style="display:inline-block; margin-bottom:12px; padding:6px 12px; background-color:#dbeafe; color:#16a34a; border-radius:4px; font-size:0.85rem;">Secure Smart Things</span>
+        <h3>3. Security and Privacy in Internet of Robotic Things (IoRT) Environment</h3>
+        <p>
+          IoRT 환경에서 발생할 수 있는 보안 및 프라이버시 위협을 분석하고, 이를 완화하기 위한 기술을 연구합니다. 
+          IoRT 디바이스 간의 안전한 통신 프로토콜, 이상 행동 탐지, 프라이버시 보호 메커니즘을 개발하여 스마트 홈 및 산업용 IoT 환경의 보안을 강화하는 방법을 연구합니다。
+          <br/>
+          We analyze security and privacy threats in IoRT environments and study technologies to mitigate them. We develop secure communication protocols, anomaly detection, and privacy protection mechanisms for IoRT devices to enhance the security of smart home and industrial IoT environments.
+        </p>
+        <ul class="highlight-list">
+          <li>IoRT 환경의 보안 위협 분석 및 모델링</li>
+          Security threat analysis and modeling in IoRT environments
+          <li>IoRT 디바이스 간 안전한 통신 프로토콜 연구</li>
+          Secure communication protocols for IoRT devices
+          <li>IoRT 환경에서의 이상 행동 탐지 연구</li>
+          Anomaly detection in IoRT environments
+          <li>IoRT 환경에서의 프라이버시 보호 메커니즘 연구</li>
+          Privacy protection mechanisms in IoRT environments
+        </ul>
+        <div class="tags" style="margin-top:16px;">
+          <span class="tag">IoRT Security</span>
+          <span class="tag">IoRT Privacy</span>
+          <span class="tag">Secure Communication on IoRT</span>
+          <span class="tag">Multi-modal Anomaly Detection</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Research Area 4 -->
+    <div style="margin-bottom: 32px;">
+      <div class="card research-full">
+        <span class="news-item__badge badge-grant" style="display:inline-block; margin-bottom:12px; padding:6px 12px; background-color:#dbeafe; color:#16a34a; border-radius:4px; font-size:0.85rem;">Secure Smart Things</span>
+        <h3>4. Performance and Security Analysis of Networks on Autonomous Vehicles</h3>
+        <p>
+          자율주행차량 네트워크의 성능과 보안을 분석하는 연구를 수행합니다. 
+          차량 간 통신(V2V), 차량과 인프라 간 통신(V2I)에서 발생할 수 있는 보안 위협을 분석하고, 
+          이를 완화하기 위한 기술을 연구합니다. 
+          또한 자율주행차량 비디오 스트리밍시 성능을 최적화하는 방법을 분석하여 안전하고 효율적인 자율주행 환경을 구축하는 방법을 연구합니다.
+          <br/>
+          We conduct research on performance and security analysis of autonomous vehicle networks. We analyze security threats in Vehicle-to-Vehicle (V2V) and Vehicle-to-Infrastructure (V2I) communications and study technologies to mitigate them. We also analyze methods to optimize video streaming performance in autonomous vehicles to build safe and efficient autonomous driving environments.
+
+        </p>
+        <ul class="highlight-list">
+          <li>자율주행차량 네트워크의 보안 위협 분석 및 모델링</li>
+          Security threat analysis and modeling of autonomous vehicle networks
+          <li>자율주행차량 네트워크에서의 이상 행동 탐지 연구</li>
+          Anomaly detection in autonomous vehicle networks
+          <li>자율주행차량 비디오 스트리밍 성능 분석 및 최적화</li>
+          Performance analysis and optimization of autonomous vehicle video streaming
+          <li>자율주행차량 비디오 스트리밍의 보안 및 프라이버시 보호</li>
+          Security and privacy protection for autonomous vehicle video streaming
+        
+        </ul>
+        <div class="tags" style="margin-top:16px;">
+          <span class="tag">Autonomous Vehicle Network Security</span>
+          <span class="tag">V2V Security</span>
+          <span class="tag">V2I Security</span>
+          <span class="tag">Anomaly Detection on Autonomous Vehicle Networks</span>
+          <span class="tag">Autonomous Vehicle Video Streaming</span>
+          <span class="tag">Video Streaming Optimization</span>
+          <span class="tag">QoS Improvement</span>
+          <span class="tag">Latency and Bandwidth Management</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Research Area 5 -->
+    <div style="margin-bottom: 32px;">
+      <div class="card research-full">
+        <span class="news-item__badge badge-grant" style="display:inline-block; margin-bottom:12px; padding:6px 12px; background-color:#dbeafe; color:#5f16a3; border-radius:4px; font-size:0.85rem;">Privacy Protection</span>
+        <h3>5. Video Streaming Privacy Protection</h3>
+        <p>
+          비디오 스트리밍 영상에서 프라이버시 민감한 정보를 식별하고 보호하는 기술을 연구합니다.
+          객체 검출, 얼굴 인식, 행동 분석 등의 기술을 활용하여 민감 정보를 감지하고 이를 블러링, 마스킹, 암호화 등의 방법으로 보호하는 기술을 연구합니다.
+          <br/>
+          We study technologies to identify and protect privacy-sensitive information in video streams. We research techniques to detect sensitive information using object detection, face recognition, and behavior analysis, and protect it through blurring, masking, encryption, and other methods.
+        </p>
+        <ul class="highlight-list">
+          <li>비디오 스트리밍 영상에서 프라이버시 민감한 정보 식별 기술 연구</li>
+          Identification of privacy-sensitive information in video streams
+          <li>비디오 스트리밍 영상에서 프라이버시 보호 기술 연구 (블러링, 마스킹, 암호화 등)</li>
+          Privacy protection techniques for video streams (blurring, masking, encryption, etc.)
+        </ul>
+        <div class="tags" style="margin-top:16px;">
+          <span class="tag">Video Streaming Privacy</span>
+          <span class="tag">Sensitive Information Detection</span>
+          <span class="tag">Privacy Protection Techniques</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Funded Projects ── -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-title">
+      <h2>Funded Projects</h2>
+      <div class="divider"></div>
+      <p>진행 중 및 완료된 연구 과제</p>
+    </div>
+    <div class="grid-2">
+      <div class="card" style="padding:28px;">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:10px;">
+          <span class="news-item__badge badge-grant" style="font-size:0.75rem;">진행 중</span>
+          <span style="font-size:0.8rem; color:var(--text-muted);">2026–2026</span>
+        </div>
+        <h3 style="font-size:1rem; margin-bottom:6px;">LLM/AI Agent 기반 통신 운용 자동화 및 보안 연구</h3>
+        <p style="font-size:0.85rem; color:var(--text-muted);">국립한밭대학교 지역혁신중심 대학지원체계(RISE) 사업</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <div class="footer__logo"><span class="blast">BLAST</span> Lab</div>
+      <p class="footer__desc">
+        Borderless Authentication &amp;  <br/>Secure Smart Things Lab<br />
+        Department of Computer Engineering<br />
+        Hanbat National University (한밭대학교)
+      </p>
+    </div>
+    <nav class="footer__nav" aria-label="Footer navigation">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="../">Home</a></li>
+        <li><a href="../members/">Members</a></li>
+        <li><a href="../research/">Research</a></li>
+        <li><a href="../publications/">Publications</a></li>
+        <li><a href="../news/">News</a></li>
+        <li><a href="../joinus/">Join Us</a></li>
+      </ul>
+    </nav>
+    <div class="footer__nav">
+      <h4>Contact</h4>
+      <ul>
+        <li><i class="fa-solid fa-envelope" style="width:14px;"></i>&nbsp; jh.park at hanbat.ac.kr</li>
+        <li><i class="fa-solid fa-location-dot" style="width:14px;"></i>&nbsp; 대전광역시 유성구 동서대로 125</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© 2026 BLAST Lab, Hanbat National University. All rights reserved.</span>
+    <span>Built with GitHub Pages</span>
+    <span>Built by BLAST Lab with Generative AI</span>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
